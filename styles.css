@@ -16,6 +16,7 @@ body {
     text-align: center;
     color: #333;
     line-height: 1.6;
+    padding: 2rem 0;
 }
 
 /* Typography */
@@ -28,6 +29,39 @@ h1 {
     -webkit-text-fill-color: transparent;
     background-clip: text;
     text-align: center;
+}
+
+h2 {
+    font-size: 1.8rem;
+    font-weight: 600;
+    margin: 2rem 0 1rem 0;
+    color: #667eea;
+    text-align: center;
+}
+
+ul {
+    max-width: 600px;
+    margin: 0 auto 2rem;
+    text-align: left;
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    background: rgba(102, 126, 234, 0.1);
+    margin: 0.8rem 0;
+    padding: 1rem 1.5rem;
+    border-radius: 15px;
+    border-left: 4px solid #667eea;
+    transition: all 0.3s ease;
+    color: #555;
+    line-height: 1.6;
+}
+
+li:hover {
+    background: rgba(102, 126, 234, 0.15);
+    transform: translateX(5px);
+    box-shadow: 0 5px 15px rgba(102, 126, 234, 0.2);
 }
 
 p {
@@ -86,10 +120,13 @@ p {
     box-shadow: 0 8px 25px rgba(102, 126, 234, 0.3);
     text-transform: uppercase;
     letter-spacing: 1px;
+    display: block;
+    margin: 0 auto;
+    width: fit-content;
 }
 
 .contact-btn:hover {
-    transform: translateY(-3px);
+    transform: translateY(-3px) scale(1.05);
     box-shadow: 0 12px 35px rgba(102, 126, 234, 0.4);
     background: linear-gradient(135deg, #764ba2 0%, #667eea 100%);
 }
@@ -109,6 +146,7 @@ p {
         margin: 0.5rem;
         padding: 1.5rem;
         border-radius: 15px;
+        text-align: center;
     }
     
     h1 {
@@ -116,19 +154,33 @@ p {
         margin-bottom: 1rem;
     }
     
+    h2 {
+        font-size: 1.5rem;
+        margin: 1.5rem 0 0.8rem 0;
+    }
+    
     p {
         font-size: 1rem;
         margin-bottom: 1.5rem;
     }
     
+    li {
+        padding: 0.8rem 1rem;
+        margin: 0.6rem 0;
+    }
+    
     .contact-btn {
         padding: 12px 25px;
         font-size: 1rem;
+        display: block;
+        margin: 0 auto;
+        width: fit-content;
     }
     
     .about-link {
         font-size: 1rem;
         padding: 0.4rem 0.8rem;
+        display: inline-block;
     }
 }
 
@@ -137,17 +189,32 @@ p {
         font-size: 1.8rem;
     }
     
+    h2 {
+        font-size: 1.3rem;
+        margin: 1.2rem 0 0.6rem 0;
+    }
+    
     p {
         font-size: 0.95rem;
     }
     
+    li {
+        padding: 0.7rem 0.8rem;
+        margin: 0.5rem 0;
+        font-size: 0.9rem;
+    }
+    
     .container {
         padding: 1rem;
+        text-align: center;
     }
     
     .contact-btn {
         padding: 10px 20px;
         font-size: 0.95rem;
+        display: block;
+        margin: 0 auto;
+        width: fit-content;
     }
 }
 
