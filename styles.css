@@ -1,0 +1,164 @@
+/* Modern CSS Reset and Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Typography */
+h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-align: center;
+}
+
+p {
+    font-size: 1.1rem;
+    max-width: 600px;
+    margin: 0 auto 2rem;
+    color: #555;
+    text-align: center;
+    line-height: 1.7;
+}
+
+/* Container */
+.container {
+    max-width: 800px;
+    width: 100%;
+    padding: 2rem;
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 20px;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(10px);
+    margin: 1rem;
+}
+
+/* Links */
+.about-link {
+    display: inline-block;
+    color: #667eea;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1.1rem;
+    margin: 1.5rem 0;
+    padding: 0.5rem 1rem;
+    border-radius: 25px;
+    transition: all 0.3s ease;
+    background: rgba(102, 126, 234, 0.1);
+}
+
+.about-link:hover {
+    color: #764ba2;
+    background: rgba(118, 75, 162, 0.15);
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(102, 126, 234, 0.3);
+}
+
+/* Button Styles */
+.contact-btn {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    border-radius: 30px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 8px 25px rgba(102, 126, 234, 0.3);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.contact-btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 12px 35px rgba(102, 126, 234, 0.4);
+    background: linear-gradient(135deg, #764ba2 0%, #667eea 100%);
+}
+
+.contact-btn:active {
+    transform: translateY(-1px);
+    box-shadow: 0 6px 20px rgba(102, 126, 234, 0.3);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    body {
+        padding: 1rem;
+    }
+    
+    .container {
+        margin: 0.5rem;
+        padding: 1.5rem;
+        border-radius: 15px;
+    }
+    
+    h1 {
+        font-size: 2rem;
+        margin-bottom: 1rem;
+    }
+    
+    p {
+        font-size: 1rem;
+        margin-bottom: 1.5rem;
+    }
+    
+    .contact-btn {
+        padding: 12px 25px;
+        font-size: 1rem;
+    }
+    
+    .about-link {
+        font-size: 1rem;
+        padding: 0.4rem 0.8rem;
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 1.8rem;
+    }
+    
+    p {
+        font-size: 0.95rem;
+    }
+    
+    .container {
+        padding: 1rem;
+    }
+    
+    .contact-btn {
+        padding: 10px 20px;
+        font-size: 0.95rem;
+    }
+}
+
+/* Smooth animations */
+* {
+    transition: all 0.3s ease;
+}
+
+/* Focus states for accessibility */
+.contact-btn:focus,
+.about-link:focus {
+    outline: 2px solid #667eea;
+    outline-offset: 2px;
+}
